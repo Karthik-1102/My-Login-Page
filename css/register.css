@@ -1,0 +1,90 @@
+html,
+body {
+    background: linear-gradient(#b2d6d6, #75c1d7);
+    margin: 0;
+    height: 100%;
+    position: relative;
+}
+
+.main-container {
+    height: 70%;
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    position: relative;
+    top: 15%;
+    left: 25%;
+    flex: content;
+    flex-direction: row;
+
+
+}
+
+
+.left {
+    width: 40%;
+    height: 100%;
+    float: left;
+    box-shadow: 25px 0px 20px -20px rgba(0,0,0,0.45);
+
+}
+
+.right {
+    width: 60%;
+    height: 100%;
+    float: right;
+    
+}
+.vertC{
+  
+      position: relative;
+    top: 45%;
+    transform: translateY(-55%);
+}
+.Img{
+   align-self: center;
+    margin-top: 15%;
+    height: 70%;
+    width: 100%;
+}
+.form{
+    margin-left: 30px;
+    margin-top: 20%;
+}
+.text1{
+    font-style:italic;
+}
+.text2{
+    font-weight:bold ;
+    font-size:larger;
+}
+.smallInput{
+    width: 60%;
+    margin-left: 20%;
+    height: 8px;
+    border: none;
+    box-shadow:  0 6px 4px -4px rgba(0,0,0,0.7); 
+}
+.leftM{
+    margin-left: 20%;
+}
+.topM{
+    margin-top: 15px;
+}
+.btn{
+    border: none;
+    background-color: rgb(77, 146, 173);
+   
+}
+@media screen and (max-width: 1000px) {
+   .left {
+      width: 0%;
+   }
+   .right{
+    width: 100%;
+   }
+   .Img{
+    display: none;
+   }
+}
