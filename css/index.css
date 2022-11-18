@@ -77,8 +77,13 @@ body {
     background-color: rgb(77, 146, 173);
    
 }
-@media screen and (max-width: 1000px) {
-   .left {
+@media screen and (max-width: 900px) {
+    .main-container{
+    height: 60%;
+    top:20%;
+    box-shadow: 10px;
+   }
+    .left {
       width: 0%;
    }
    .right{
@@ -88,9 +93,6 @@ body {
     display: none;
     
    }
-   .main-container{
-    height: 50%;
-    top:25%
-   }
+   
   
 }
