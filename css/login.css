@@ -3,25 +3,18 @@ body {
     background: linear-gradient(#b2d6d6, #75c1d7);
     margin: 0;
     height: 100%;
-    position: relative;}
+    position: relative;
+}
 
-.card-registration .select-input.form-control[readonly]:not([disabled]) {
-font-size: 1rem;
-line-height: 2.15;
-padding-left: .75em;
-padding-right: .75em;
-}
-.card-registration .select-arrow {
-top: 13px;
-}
+
 .main-container {
-    height: 90%;
+    height: 70%;
     width: 50%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     position: relative;
-    top: 0%;
+    top: 15%;
     left: 25%;
     flex: content;
     flex-direction: row;
@@ -43,6 +36,10 @@ top: 13px;
     height: 100%;
     float: right;
     
+}
+
+#error-msg{
+color:red;
 }
 .vertC{
   
@@ -67,9 +64,12 @@ top: 13px;
     font-weight:bold ;
     font-size:larger;
 }
-
-.form-control-lg{
-    min-height: none;
+.smallInput{
+    width: 60%;
+    margin-left: 20%;
+    height: 1em;
+    border: none;
+    box-shadow:  0 6px 4px -4px rgba(0,0,0,0.7); 
 }
 .leftM{
     margin-left: 20%;
@@ -83,14 +83,14 @@ top: 13px;
    
 }
 
-#fail-response{
-    color: red;
-}
-#success-response{
-    color: green;
-}
-@media screen and (max-width: 1000px) {
-   .left {
+
+@media only screen and (max-width: 900px) {
+    .main-container{
+    height: 60%;
+    top:20%;
+    box-shadow: 10px;
+   }
+    .left {
       width: 0%;
    }
    .right{
@@ -98,5 +98,28 @@ top: 13px;
    }
    .Img{
     display: none;
+    
    }
+   
+  
+}
+
+@media only screen and (max-device-width: 500px) {
+    .main-container{
+    height: 50%;
+    top:20%;
+    box-shadow: 10px;
+   }
+    .left {
+      width: 0%;
+   }
+   .right{
+    width: 100%;
+   }
+   .Img{
+    display: none;
+    
+   }
+   
+  
 }

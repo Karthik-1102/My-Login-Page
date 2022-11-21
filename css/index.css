@@ -77,9 +77,29 @@ body {
     background-color: rgb(77, 146, 173);
    
 }
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     .main-container{
     height: 60%;
+    top:20%;
+    box-shadow: 10px;
+   }
+    .left {
+      width: 0%;
+   }
+   .right{
+    width: 100%;
+   }
+   .Img{
+    display: none;
+    
+   }
+   
+  
+}
+
+@media only screen and (max-device-width: 500px) {
+    .main-container{
+    height: 50%;
     top:20%;
     box-shadow: 10px;
    }

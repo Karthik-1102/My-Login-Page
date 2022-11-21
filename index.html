@@ -8,24 +8,22 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
-    <div class="main-container ">
+    <div class="main-container">
       <div class="left">
         <img class="Img" src="assets/login-left-bg4.jpg" alt="my image" />
       </div>
 
-      <div class="right ">
-        
-        <form class="vertC" action="login.php" method="post">
-            <p class="text2 text-center">Welcome !</p>
+      <div class="right">
+        <form class="vertC">
+          <p class="text2 text-center">Welcome !</p>
           <div class="form-floating mb-3">
             <input
-
               type="email"
-              class="form-control smallInput"
-              id="floatingInput"
+              class="form-control smallInput email"
+              id="floatingInput "
               placeholder="Email Address"
             />
             <label class="leftM" for="floatingInput">Email Address</label>
@@ -33,25 +31,36 @@
           <div class="form-floating">
             <input
               type="password"
-              class="form-control smallInput"
+              class="form-control smallInput password"
               id="floatingPassword"
               placeholder="Password"
             />
             <label class="leftM" for="floatingPassword">Password</label>
-          </div>
+          </div><br>
+          <p id="error-msg" class="leftM" style="color: red;"></p>
           <div class="form-check leftM topM">
             <input
               type="checkbox"
-              class="form-check-input "
+              class="form-check-input"
               id="exampleCheck1"
             />
+            
+            
             <label class="form-check-label" for="exampleCheck1"
               >Remember Me</label
             >
+            
+       
           </div>
-          <button type="submit" class="btn btn-primary leftM topM">Login</button>
-          <p class="leftM topM text1">First Time here? <a href="register.html">Regsiter</a><p>
+          <button type="button" class="btn btn-primary leftM topM" id="login">
+            Login
+          </button>
+          <p class="leftM topM text1">
+            First Time here? <a href="register.html">Regsiter</a>
+          </p>
+          <p></p>
         </form>
+        
       </div>
     </div>
     <script
@@ -64,5 +73,11 @@
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
